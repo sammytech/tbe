@@ -1,0 +1,13 @@
+<!-- artists.nunjucks -->
+{% extends "layout.njk" %}
+
+{% block content %}
+{{nav.active('producers')}}
+{% import "macros/employee-macro.njk" as emp %}
+
+{#{% set employees=[{'img':'https://robohash.org/reiciendiseaqueoptio.jpg?size=512x512&set=set1', 'name':'Korede Bello'}] %}#}
+{{emp.field('producers', employees=[{'img':'img/don.jpg', 'name':'Don Jazzy', 'link':'don.html'}
+])}}
+
+
+{% endblock %}

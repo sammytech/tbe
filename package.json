@@ -1,0 +1,14 @@
+{
+  "name": "tbe",
+  "version": "0.0.1",
+  "description": "Truly Blessed Entertainment",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.17.2",
+    "gulp-nunjucks-render": "^2.0.0"
+  },
+  "scripts": {},
+  "author": "Sammytech",
+  "license": "ISC"
+}

@@ -1,0 +1,31 @@
+<!-- artists.nunjucks -->
+{% extends "layout.njk" %}
+
+{% block content %}
+{{nav.active('albums')}}
+
+
+<section class="about">
+    <div class="container">
+        <h1 class="page-header">ALBUMS</h1>
+        <div class="albums">
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <div id="box" class="thumbnail">
+                        <img class="album-img" src="img/album1.jpg" alt="...">
+                        <div class="caption">
+                            <h3>SPOTLIGHT - REEKADO BANKS</h3>
+                            <h5>Release Date: September 16, 2015</h5>
+                        </div>
+                        <div class="div-overlay text-center">
+                            <button class="btn btn-success">BUY IT NOW</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>	
+	    </div>
+    </div>
+</section>
+
+{% endblock %}

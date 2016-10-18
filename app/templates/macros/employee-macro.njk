@@ -1,0 +1,26 @@
+{% macro field(name, employees) %}
+<section class="about">
+    <div class="container">
+        <h1 class="page-header">{{name|upper}}</h1>
+        <div class={{name}}>
+            <div class="row">
+                {% for employee in employees %}
+                    <div  class="col-sm-6 col-md-4">
+                        <a href={{employee.link + ""}} id="box" class="thumbnail">
+                            <img class="album-img" src={{employee.img}} alt="...">
+                            <div class="caption">
+                                <h3>{{employee.name}}</h3>
+                            </div>
+                            <div class="div-overlay text-center">
+                                <div class="img-overlay">
+                                <span class="icon"><i class="ion-eye"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>	
+	    </div>
+    </div>
+</section>
+{% endmacro %}

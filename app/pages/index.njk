@@ -1,0 +1,113 @@
+<!-- index.nunjucks -->
+{% extends "layout.njk" %}
+
+{% block content %}
+
+
+
+{{nav.active('home')}}
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="./img/banner1.jpg" alt="...">
+        <div class="carousel-caption">
+          {#<h3>Caption Text</h3>#}
+        </div>
+      </div>
+      <div class="item">
+        <img src="./img/banner2.png" alt="...">
+        <div class="carousel-caption">
+          {#<h3>Caption Text</h3>#}
+        </div>
+      </div>
+      <div class="item">
+        <img src="./img/banner3.jpg" alt="...">
+        <div class="carousel-caption">
+          {#<h3>Caption Text</h3>#}
+        </div>
+      </div>
+      <div class="item">
+        <img src="./img/banner4.jpg" alt="...">
+        <div class="carousel-caption">
+          {#<h3>Caption Text</h3>#}
+        </div>
+      </div>
+      <div class="item">
+        <img src="./img/banner5.jpg" alt="...">
+        <div class="carousel-caption">
+          {#<h3>Caption Text</h3>#}
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-circle-arrow-left nav-icon nav-icon-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-circle-arrow-right nav-icon nav-icon-right"></span>
+      <!-- glyphicon glyphicon-chevron-right -->
+    </a>
+  </div>
+  <!-- Carousel -->
+
+  <section>
+    <iframe width="100%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/237214834&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+  </section>
+  <section class="releases">
+    <div class="container">
+      <h1>RECENT RELEASES</h1>
+      <div class="row">
+        <div class="col-xs-12 col-md-4 col-lg-4 ">
+          <a href="#">
+            <div class="recents audio overlay" data-icon="">
+              <div class="container-img">
+                <img class="size-square-350" src="img/artwork1.jpg" alt="...">
+              </div>
+              <div class="caption">
+                <div class="date-release">January 12, 2016</div>
+                <div class="title-release">What A Time To Be Alive</div>
+                <div class="artist-release"><span>by:   </span>Drake ft Future</div>
+              </div>
+
+            </div>
+          </a>
+
+        </div>
+      </div>
+  </section>
+  <section class="about">
+    <div class="container">
+      <h1>ABOUT US</h1>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis velit, euismod non venenatis et, suscipit eu nisl. Quisque ullamcorper augue vitae arcu sollicitudin, in vestibulum sapien ultrices. Nunc dictum lorem sed tortor hendrerit, et pretium nunc venenatis. In fermentum felis augue, id venenatis ligula porttitor in. Integer sollicitudin rutrum diam non venenatis. Vestibulum laoreet tempor tincidunt. Nam nibh erat, semper nec dolor in, posuere viverra mauris.
+</p>
+<p>
+Mauris id arcu odio. Praesent cursus sodales arcu ut finibus. In blandit sed metus non rhoncus. Integer in efficitur sapien. Nam eros tellus, gravida et arcu aliquam, euismod sollicitudin purus. Pellentesque cursus, risus vel placerat ultricies, velit est mollis turpis, ac faucibus sem felis ac dolor. Donec non nibh metus. Fusce ac ex urna. Nunc at metus ligula. Phasellus euismod mauris eget imperdiet pulvinar. Nullam efficitur est id varius rutrum. Integer mattis et nulla vel dapibus. Aliquam accumsan arcu ac eros pulvinar laoreet. Aliquam sit amet malesuada dui. In vehicula aliquet urna. Phasellus porta posuere sapien et sagittis.
+</p>
+<p>
+Fusce rutrum, eros quis aliquam sodales, lacus nisl pellentesque quam, at porta quam tortor in lorem. Duis diam lorem, rhoncus id fringilla ut, consectetur id lectus. Mauris sed mauris lectus. Nullam sollicitudin nunc vitae metus tristique bibendum. Vivamus malesuada tincidunt urna sit amet ultrices. Etiam at ante lacus. Nulla ac fermentum turpis. Aenean pharetra, ipsum ac placerat venenatis, mauris magna dignissim ante, vel mollis nulla ex cursus urna. Vestibulum vitae leo non metus posuere dignissim.
+</p>
+<p>
+Nulla volutpat metus ac ipsum aliquam imperdiet eget non augue. Donec dignissim massa quis nibh sollicitudin, vitae venenatis enim vehicula. Mauris vulputate in lacus at varius. Nulla mattis gravida neque, eget viverra diam tempus convallis. Nullam tempus in arcu at lacinia. Vestibulum sed nulla est. Integer tincidunt est nisi, non aliquam neque ornare consequat. Pellentesque ac dui est. Maecenas ultricies gravida magna, sit amet aliquet lorem tempus sed.
+</p>
+<p>
+Phasellus eget quam id nisl facilisis ultricies quis in lectus. Ut bibendum faucibus sem, vel sagittis augue ullamcorper tempus. Nunc enim turpis, rhoncus non maximus sed, rhoncus a est. Duis neque purus, porta a velit non, facilisis euismod magna. Ut varius, augue eget auctor malesuada, erat nunc mattis sem, quis dictum mauris odio eget ipsum. Nullam et pulvinar risus. Nunc at mauris ut justo laoreet rutrum vel vitae ex. Vestibulum feugiat, orci ut laoreet eleifend, magna urna scelerisque ex, ac maximus nulla arcu vel justo. Donec quis nisl nec mi faucibus eleifend sed in mauris. Cras quis justo id nisi dapibus vestibulum. Praesent felis orci, semper ut urna quis, accumsan auctor neque. Donec sodales nisi et tempor gravida. Sed in finibus velit. Integer fringilla risus suscipit sem ultrices, non sodales diam viverra. Proin lacinia commodo hendrerit. Sed pretium lectus et nisi rhoncus hendrerit.
+</p>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}
