@@ -1,0 +1,565 @@
+/*Forcefully resets the margin for the page*/
+html{
+	margin-top: 0px !important;
+	
+}
+body{
+	background-color: #696969;
+}
+
+a:hover, a:visited, a:active, a:focus, a:link{
+	text-decoration: none;
+}
+
+
+/*	=================================
+	NAVIGATION
+	=================================*/
+
+
+/*Control singluar navbar*/
+.navbar{
+	min-height: 100px;
+	margin-bottom: 0px;
+	padding: 0px 55px;
+
+}
+
+.navbar-nav > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 96px;
+}
+
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.navbar-form{
+	width: 305px;
+	
+}
+
+.dropdown-form{
+	padding: 0;
+	background-color: transparent
+}
+.form-drop{
+	border-radius: 10px;
+	background-color: #fff;
+	margin: 0px;
+	padding: 10px;
+}
+
+.navbar-brand > img{
+	max-height:80px; 
+	/*max-width: 400px;*/
+	width: 150px;
+	margin-top: -7px;
+	border-radius: 20px;
+
+}
+
+/*	=================================
+	BRAND NAME AND LOGO
+	=================================*/
+/*Styling of the brand-display on top of the screen */
+.brand-header{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.brand-header img{
+	width:25%;
+	height:25%; 
+}
+
+
+.brand-header:visited, .brand-header:hover, .brand-header:active, .brand-header:focus{
+	text-decoration: none;
+}
+
+.brand-header:hover{
+	color: #D3D3D3;
+}
+
+.brand-header{
+	font-size: 2.5em;
+	color: #000;
+	font-weight: 500;
+	vertical-align: middle;
+}
+
+@media (min-width: 768px){
+	/*	=================================
+	NAVIGATION
+	=================================*/
+	.navbar {
+		/*Remove border radius*/
+	    border-radius: 0px;
+	}
+	/*Add underline when is hover or selected*/
+	.navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus, .navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover, .navbar .navbar-nav > .active > a:focus {
+	    border-bottom: 4px solid #439348;
+		background-color: transparent;
+	}
+	/*Controls the centering of navbar-link*/
+	/*.navbar.center .navbar-inner {
+	    text-align: center;
+	}
+	.navbar.center .navbar-inner .nav {
+	    float: none;
+	    display:inline-block;
+	}*/
+	/*-----------------------------------------*/
+	/*Remove underline from Search nav_menu when hovered or selected*/
+	a#search_link:hover, a#search_link:focus{
+		border-bottom: 0px solid transparent;
+	}
+	/*Change size of search button and appropriately set the padding*/
+	a#search_link{
+		font-size: 20px;
+		line-height: 100px;
+		/*padding-top: 25px;*/
+		/*padding-bottom: 25px;*/
+	}
+}
+
+/*------------------------------------------------------------------*/
+
+/*	=================================
+	CAROUSEL
+	=================================*/
+.carousel-control .nav-icon-right,  .carousel-control .nav-icon-left{
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    z-index: 5;
+    display: inline-block;
+    
+}
+.carousel-indicators {
+	z-index: 9;
+}
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+	display: block;
+	max-width: 100%;
+	max-height: 500px !important;
+  	width: 100%;
+}
+
+
+/*	=================================
+	SECTIONS FORMATTING
+	=================================*/
+.section-header{
+	text-transform: uppercase;
+}
+.section-bottom-padding-md{
+	padding-bottom: 10px;
+}
+
+.section-bottom-padding-lg{
+	padding-bottom: 20px;
+}
+
+.section-bottom-padding-xl{
+	padding-bottom: 40px;
+}
+
+.section-top-padding-md{
+	padding-top: 10px;
+}
+
+.section-top-padding-lg{
+	padding-top: 20px;
+}
+
+/*See all formatting*/
+a#more{
+	border-bottom: dotted 1px blue;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+/*RECENT SONGS*/
+/*Image formatting*/
+.container-img{
+	width: 100%;
+	height: 75%;
+}
+
+.container-img img{
+	width: 100%;
+	height: 100%;
+	vertical-align: baseline;
+}
+
+/*RECENT SONGS AND VIDEOS*/
+.date-release{
+	font-weight: 500;
+	padding-top: 5px;
+	font-size: 0.9em ;
+}
+
+.title-release{
+	font-weight: 500;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 1.6em ;
+}
+
+
+.artist-release{
+	font-weight: 500;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	font-size: 1.0em ;
+}
+
+.overlay{
+	position: relative;
+	width: 100%;
+	height: 400px;
+	background-color: #696969;
+}
+.recents > div:not(.container-img){
+	padding-left: 15px;
+}
+.overlay::after, .overlay::before {
+    position: absolute;
+    display: block;
+    opacity: 0;
+	font-family: 'Glyphicons Halflings';
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.recents .caption{
+	position: relative;
+	color: black;
+	z-index: 5;
+	transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+
+.overlay::after {
+    content: '\A';
+    z-index: 1;
+    width: 100%; height:100%;
+    top: 0; left:0;
+    background:rgba(0,0,0,0.6);
+}
+
+.overlay::before {
+	
+	text-transform: uppercase;
+	background: rgba(0,0,0,0.8);
+	/*font-family: 'Glyphicons Halflings';*/
+	font-size: 2.5em;
+    width: 70px;
+    display: inline-block;
+	vertical-align: middle;
+	height: 70px;
+	line-height: 70px;
+    border-radius: 35px;
+    color: #fff;
+	margin: 0 auto;
+    /*overflow: hidden;*/
+    top: 35%;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    text-align: center;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box;
+}
+
+.audio::before{
+	content: '\e035';
+}
+.video::before{
+	content: '\e009';
+}
+
+.overlay:hover::after, .overlay:hover::before {
+    opacity: 1;
+
+}
+.overlay:hover .caption{
+	color: white;
+}
+
+
+
+/*UPCOMING PROJECTS*/
+#upcoming-projects{
+	font-size: 16px;
+	background-color:  #FF6600; 
+}
+.uppercase{
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+
+
+/*	=================================
+	FOOTER FORMATTING
+	=================================*/
+.date{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.page-footer{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+.social h3{
+	text-align: left;
+}
+
+.social .container{
+	height: 600px;
+}
+.social #copyright{
+	font-size: 1.5em;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+	background-color: grey !important;
+    color: white;
+}
+
+
+@media (min-width: 768px){	
+	/*	=================================
+	CAROUSEL
+	=================================*/
+	.carousel-control .nav-icon {
+	    width: 50px;
+	    height: 50px;
+	    margin-top: -10px;
+	    font-size: 50px;
+	}
+}
+
+
+section.releases, section.about{
+	padding: 50px 0px;
+}
+
+section.releases h1, section.about h1{
+	font-weight: bold;
+}
+
+.releases, .social{
+	background: #0f0f0f;
+	color: white;
+}
+
+.about{
+	background: white;
+}
+
+/*	=================================
+	ARTISTS AND PRODUCER SECTION
+	=================================*/
+
+
+.artist > .container-img{
+ 	width: 100%;
+ 	height: 200px;
+ }
+
+.artist>.caption{
+ 	font-size: 2em;
+ 	font-weight: 600;
+ }
+.top-margin-30{
+ 	margin-top: 30px;
+ }
+
+.artists .thumbnail, .producers .thumbnail{
+	padding: 0;
+	box-shadow: 0;
+	/*opacity: 0;*/
+	transition: all 0.5s ease-out;
+   -moz-transition: all 0.5s ease-out;
+   -webkit-transition: all 0.5s ease-out;
+}
+
+.artists .thumbnail:hover, .producers .thumbnail:hover{
+	box-shadow: 5px 5px 5px #888888;
+	transition: all 0.5s ease-in-out;
+   -moz-transition: all 0.5s ease-in-out;
+   -webkit-transition: all 0.5s ease-in-out;
+}
+
+.artists .thumbnail img, .producers .thumbnail img {
+	width: 100%;
+	height: 200px;
+	background: rgba(0,0,0,.5);
+
+}
+.artists .div-overlay .icon, .producers .div-overlay .icon{
+	font-size: 5em;
+	color: white;
+}
+
+.artists .div-overlay .img-overlay, .producers .div-overlay .img-overlay{
+	height: 200px;
+	background-color: rgba(0,0,0,.5);
+	padding-top: 50px; 
+
+	transition: all 0.5s ease-out;
+   -moz-transition: all 0.5s ease-out;
+   -webkit-transition: all 0.5s ease-out;
+}
+.thumbnail .caption {
+	text-align: center;
+}
+
+.thumbnail .caption h3{
+	color: #000;
+	font-weight: 400;
+	font-size: 2em;
+}
+
+
+/*	=========================================
+	INDIVIDUAL ARTISTS AND PRODUCERS SECTION
+	=========================================*/
+.employee-img{
+	width: 100%;
+	height: 500px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 20px;
+	padding-left: 20px;
+
+}
+.employee-img h1{
+	margin: 0;
+	color: black;
+	font-size: 4em;
+	font-weight: bold
+}
+
+a.circle, a.circle:focus{
+	background: seagreen;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 2em;
+	color: white;	
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	vertical-align: middle
+}
+
+a.circle:hover{
+	background: rgba(0,0,0,0.6);
+	color: white;
+}
+
+.ind_social{
+	padding: 0;
+}
+
+.ind_social li{
+	/*display: inline;*/
+	list-style: none;
+	display: inline-block;
+	margin-right: 15px; 
+	/*width: 50px;
+	height: 50px;*/
+}
+
+/*	=================================
+	ALBUMS SECTION
+	=================================*/
+.album-img{
+	width: 200px;
+	height: 200px;
+}
+
+
+
+.albums #box .div-overlay .btn, .individual #box .div-overlay .btn{
+	margin-top: 25%;
+}
+
+
+/*	=================================
+	OVERLAY
+	=================================*/
+#box{
+	position: relative;
+}
+.div-overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	/*display: none;*/
+	/*margin-left: 15px;*/
+	/*margin-right: 15px;*/
+	/*margin-bottom: 21px;*/
+	/*width: 100%;*/
+	/*height: 100%;*/
+	/*background-color: rgba(0,0,0,.8);*/
+
+	
+	transition: all 0.5s ease-out;
+   -moz-transition: all 0.5s ease-out;
+   -webkit-transition: all 0.5s ease-out;
+	opacity: 0;
+	
+	
+   
+}
+/*.div-overlay::before{
+	
+	opacity: 0;
+}
+.div-overlay::after{
+	opacity: 1;
+}*/
+#box:hover .div-overlay { 
+	display: block; 	
+}
+
+.div-overlay:hover{
+	opacity: 1;
+	transition: all 0.5s ease-in;
+   -moz-transition: all 0.5s ease-in;
+   -webkit-transition: all 0.5s ease-in;
+}
+
+
+/*	=================================
+	PHOTOS SECTION
+	=================================*/
+
+.photo-img{
+	width: 250px;
+	height: 250px;
+}
+
+/*	=================================
+	CONTACT SECTION
+	=================================*/
+
+.contact-info{
+	margin-top: 20px;
+}
+
+
