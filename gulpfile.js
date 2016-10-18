@@ -8,6 +8,8 @@ gulp.task('serve', function() {
         server: {
             baseDir: 'app/dist'
         }
+	//proxy: "localhost/tbe",
+	//serveStatic: ['app/dist']
     });
 });
 
